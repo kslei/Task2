@@ -103,11 +103,11 @@ function showServer (event) {
   let server = event.target.nextElementSibling;
   server.style.display = "block";//Включаем div с сервером, нулевой - serverStorage
   if (countServer === 0) {
-    server.style.background = 'url("../img/server.png") center/contain no-repeat';
+    server.style.background = 'url("./img/server.png") center/contain no-repeat';
     serverStorage = event.target.parentElement.className;//расположение сервера Storage
   }
   if (countServer !== 0) {
-    server.style.background = 'url("../img/server_ByteCloud.png") center/contain no-repeat';
+    server.style.background = 'url("./img/server_ByteCloud.png") center/contain no-repeat';
   }
   serverByteCloud.push(event.target.parentElement.className);
   countServer = countServer + 1;
@@ -182,7 +182,7 @@ function drawPath (tables, routes, latencies) {
           }
         })
         num +=1;
-        let adress = "../img/arc_" + routes[i].split('_')[0] + "_" + gajetActive[j] + ".png";
+        let adress = "./img/arc_" + routes[i].split('_')[0] + "_" + gajetActive[j] + ".png";
         let path = document.createElement('div');
         path.className = "path";
         path.style.backgroundImage = `url(${adress})`;
