@@ -227,7 +227,7 @@ function drawPath (tables, routes, latencies) {
     }
     setTimeout(() => {
       description.innerHTML = `time: ${table.download} ms`;//Время загрузки
-    }, latencies[i]*10)//Время показа задержки
+    }, time / 2)//Время показа задержки
     tables.push(table)
   }
 }
